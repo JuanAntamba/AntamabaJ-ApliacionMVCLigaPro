@@ -11,7 +11,14 @@ namespace AntamabaJ_ApliacionMVCLigaPro.Controllers
             EquipoRepository equipoRepository = new EquipoRepository();
             var equipos = equipoRepository.DevuelveListadoEquipos();
 
-            return View(equipos);   
+            return View(equipos);
+       
+        }
+        public IActionResult Edit(int Id)
+        {
+            EquipoRepository repository = new EquipoRepository();
+            var equipo = repository.DevuelveInfoEquipo(Id);
+            return View(equipo);
         }
     }
 }

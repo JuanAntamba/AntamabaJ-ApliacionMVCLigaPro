@@ -2,7 +2,90 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<head>
+    <style>
+        /* Para este apartado se pidio ayuda de la IA */
+        #ligaProCarousel {
+            position: relative;
+            max-width: 100%; 
+            border-radius: 15px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+       
+        .carousel-item img {
+            border-radius: 10px; 
+            object-fit: cover; 
+            height: 500px; 
+        }
+
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #ff5733; 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%;
+            background-size: 30px;
+            border: 2px solid #fff; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+        }
+
+       
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: #d04f00; 
+            transform: scale(1.2); 
+        }
+
+      
+        .carousel-control-prev, .carousel-control-next {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<div id="ligaProCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+     
+        <div class="carousel-item active">
+            <img src="https://studiofutbol.com.ec/wp-content/uploads/2022/03/LIGAPRO-2022.png" class="d-block w-100" alt="Liga Pro 2022">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Liga Pro 2025</h5>
+            </div>
+        </div>
+       
+        <div class="carousel-item">
+            <img src="https://www.elfutbolero.com.ec/image/elfutbolerocomec/la-iffhs-revelo-quien-es-el-equipo-del-futbol-ecuatoriano-los-ultimos-10-anos-1702308094-hq.webp" class="d-block w-100" alt="Equipo del Fútbol Ecuatoriano">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Equipo del Fútbol Ecuatoriano</h5>
+            </div>
+        </div>
+       
+        <div class="carousel-item">
+            <img src="https://i0.wp.com/rubensvalenzuela.com/web/wp-content/uploads/2019/02/liga-ecuatoriana.png?fit=299%2C255" class="d-block w-100" alt="Liga Ecuatoriana">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Liga Ecuatoriana</h5>
+            </div>
+        </div>
+    </div>
+   
+    <button class="carousel-control-prev" type="button" data-bs-target="#ligaProCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#ligaProCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+

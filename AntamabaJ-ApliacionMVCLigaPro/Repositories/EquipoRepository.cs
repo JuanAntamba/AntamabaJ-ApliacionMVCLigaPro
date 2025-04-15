@@ -1,9 +1,27 @@
-﻿using AntamabaJ_ApliacionMVCLigaPro.Models;
+﻿using AntamabaJ_ApliacionMVCLigaPro.Interfaces;
+using AntamabaJ_ApliacionMVCLigaPro.Models;
 
 namespace AntamabaJ_ApliacionMVCLigaPro.Repositories
 {
-    public class EquipoRepository
+    public class EquipoRepository : IEquipoRepository
     {
+        public bool ActualizarEquipo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool CrearEquipo()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Equipo DevuelveInfoEquipo(int Id)
+        {
+            var equipos = DevuelveListadoEquipos();
+            var equipo = equipos.Where(item => item.Id==Id).First();
+            return equipo;
+        }
+
         public List<Equipo> DevuelveListadoEquipos()
         {
             List<Equipo> equipos = new List<Equipo>();
@@ -59,6 +77,11 @@ namespace AntamabaJ_ApliacionMVCLigaPro.Repositories
             equipos.Add(idv);
 
             return equipos;
+        }
+
+        public bool EliminarEquipo()
+        {
+            throw new NotImplementedException();
         }
     }
 }
