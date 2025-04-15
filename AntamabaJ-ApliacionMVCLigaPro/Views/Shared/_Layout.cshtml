@@ -39,11 +39,17 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - AntamabaJ_ApliacionMVCLigaPro - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top text-muted bg-dark text-white py-3 mt-5">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div>
+                &copy; @DateTime.Now.Year Juan Carlos Antamba — <span class="fw-light">Ing. en Software | Amante de los deportes</span>
+            </div>
+            <div>
+                <a class="text-white text-decoration-none" asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidad</a>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
