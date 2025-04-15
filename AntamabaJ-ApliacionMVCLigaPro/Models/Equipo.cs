@@ -28,7 +28,5 @@ namespace AntamabaJ_ApliacionMVCLigaPro.Models
                 return puntos;
             }
         }
-
-
     }
 }
