@@ -44,18 +44,18 @@ namespace AntamabaJ_ApliacionMVCLigaPro.Controllers
 
             Equipo emelec= new Equipo
             {
-                Id = 3,
+                Id = 4,
                 Nombre = "Emelec",
                 PatidosJugados = 20,
                 PartidosGanados = 1,
                 PartidosEmpatados = 11,
                 PartidosPerdidos = 8
             };
-            equipos.Add(nacional);
+            equipos.Add(emelec);
 
             Equipo idv = new Equipo
             {
-                Id = 3,
+                Id = 5,
                 Nombre = "Independiente del Valle",
                 PatidosJugados = 20,
                 PartidosGanados = 5,
@@ -64,7 +64,7 @@ namespace AntamabaJ_ApliacionMVCLigaPro.Controllers
             };
             equipos.Add(idv);
 
-            return View();
+            return View(equipos);
         }
     }
 }
